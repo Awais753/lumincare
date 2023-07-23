@@ -11,7 +11,7 @@ const AccordionProvider: React.FC<any> = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='bg-theme-main rounded-lg'>
+    <div className='bg-theme-main-light rounded-lg my-1'>
       <AccordionContext.Provider value={{ isOpen, setIsOpen }}>
         {children}
       </AccordionContext.Provider>

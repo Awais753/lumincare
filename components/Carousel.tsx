@@ -2,7 +2,7 @@ import { useSwipe } from 'hooks/useSwipe'
 import React, { useEffect, useState } from 'react'
 
 export const CarouselItem: React.FC<any> = ({ children }) => (
-  <div className='w-full inline-block'>{children}</div>
+  <div className='w-full align-middle inline-block'>{children}</div>
 )
 const Carousel: React.FC<any> = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0)
