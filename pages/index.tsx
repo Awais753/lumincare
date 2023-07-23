@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import { faBars, faCartShopping, faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -150,9 +151,9 @@ const Home: NextPage = () => {
 
         {/* Trust Section */}
         <section className='px-4 my-4'>
-          <div className='flex justify-between'>
+          <div className='flex justify-between px-4'>
             <div className='flex items-center gap-1'>
-              <span className='w-8 h-7'>
+              <span className='w-7 h-6'>
                 <Image
                   src='/assets/images/TrustIcon_clinically_studied.png'
                   width={30}
@@ -162,12 +163,12 @@ const Home: NextPage = () => {
                   layout='responsive'
                 />
               </span>
-              <span className='pt-1'>
+              <span className='pt-2'>
                 <p className='text-xs'>Clinically Studied</p>
               </span>
             </div>
             <div className='flex items-center gap-1'>
-              <span className='w-8 h-7'>
+              <span className='w-7 h-6'>
                 <Image
                   src='/assets/images/TrustIcon_No_SIde_Effect.png'
                   width={30}
@@ -177,7 +178,7 @@ const Home: NextPage = () => {
                   layout='responsive'
                 />
               </span>
-              <span className='pt-1'>
+              <span className='pt-2'>
                 <p className='text-xs'>No Side effects</p>
               </span>
             </div>
@@ -186,12 +187,12 @@ const Home: NextPage = () => {
 
         {/* CTA */}
         <section className='px-4 my-4'>
-          <button className='px-6 py-4 bg-theme-main rounded-md text-white w-full hover:bg-theme-main-dark transition-colors duration-200 ease-in'>
+          <button className='px-3 py-1 bg-theme-main text-white w-full hover:bg-theme-main-dark transition-colors duration-200 ease-in text-xs rounded-sm shadow-black shadow-sm'>
             <div className='flex justify-center items-center gap-2'>
-              <span>
-                <FontAwesomeIcon icon={faCartShopping} className='w-4 h-6' />
+              <span className='pt-0.5'>
+                <FontAwesomeIcon icon={faCartShopping} className='w-4 h-5' />
               </span>
-              <span className='text-white font-bold'>Add to Cart</span>
+              <span className='text-white font-bold'>Buy with Cash On Delivery</span>
             </div>
           </button>
           <div className='h-fit px-4 my-2'>
@@ -204,7 +205,149 @@ const Home: NextPage = () => {
               layout='responsive'
             />
           </div>
-          <div className='w-full px-6 py-4 bg-theme-main-light rounded-md' />
+          {/* <div className='w-full px-6 py-4 bg-theme-main-light rounded-md' /> */}
+        </section>
+
+        {/* Product Description */}
+        <section className='px-4 my-2'>
+          <div className='text-center px-1 mb-2 text-sm'>
+            <h3>
+              <strong>
+                <span className='underline'>INSTANTLY</span> BURN BELLY FAT AND ELIMINATE TOXINS
+                THROUGH YOUR BELLY BUTTON
+              </strong>
+            </h3>
+          </div>
+          <div className='mb-4'>
+            <img src='/assets/images/positive_effects.png' alt='five stars' className='mx-auto' />
+          </div>
+          <div className='text-center mb-4'>
+            <p className='text-xs leading-normal'>
+              <span>This</span>
+              <strong>&nbsp;all-natural</strong>
+              <span>&nbsp;oil&nbsp;</span>
+              <span>delivers </span>
+              <strong>powerful herbal ingredients</strong>
+              <span>&nbsp;helping you </span>
+              <strong>lose stubborn belly fat</strong>
+              <span>. </span>
+              <strong>Say goodbye </strong>
+              <span>to</span>
+              <strong> excess weight, exercise, and strict diets,&nbsp;</strong>
+              <span>and hello to a</span>
+              <strong> more energized, confident you!</strong>
+            </p>
+          </div>
+          <div className='mb-2'>
+            <Image
+              src='/assets/images/Post6_480x480.jpg'
+              width={480}
+              height={480}
+              objectFit='contain'
+              alt='burn fat'
+              layout='responsive'
+            />
+          </div>
+          <div className='text-center'>
+            <h3 className='text-sm underline mb-2'>
+              <strong>Get Instant Results Or Your Money Back Guaranteed</strong>
+            </h3>
+            <p className='text-xs leading-normal'>
+              Drip some drops of&nbsp;<b>Fat Melting Miracle</b>&nbsp;on your belly button and let
+              it absorb to&nbsp;<strong>achieve visible slimming effect</strong>. The ultra-fast fat
+              burning formula is specially designed to&nbsp;<strong>eliminate stubborn fat.</strong>
+            </p>
+          </div>
+          <div className='mb-1'>
+            <Image
+              src='/assets/images/NEWDESIGN-picture5-Freetshirt_3_480x480.jpg'
+              width={480}
+              height={480}
+              objectFit='contain'
+              alt='Amazing Results!'
+              layout='responsive'
+            />
+          </div>
+          <div className='text-center mb-4'>
+            <h3 className='text-sm mb-3'>
+              <strong>BURN FAT WITHOUT STRICT DIETS OR EXERCISE</strong>
+            </h3>
+            <p className='text-xs leading-normal'>
+              <strong>Eat anything you want</strong>, including your favorite dishes, and your
+              favorite fast food meals. The burner&nbsp;oil will help you lose stubborn fat, while
+              you can live your best life <strong>(NO EXERCISE OR DIET NEEDED)</strong>.
+            </p>
+          </div>
+          <div className='text-center mb-4'>
+            <h3 className='text-sm mb-3'>
+              <strong>EFFECTIVE & NO SIDE EFFECTS:</strong>
+            </h3>
+            <p className='text-xs leading-normal mb-2'>
+              Relieves gassiness and bloating. You can lose weight, slim down, and increase your
+              energy levels for a better and healthy life.
+            </p>
+            <h3 className='text-sm mb-3'>
+              <strong>LOSE WEIGHT NATURALLY:</strong>
+            </h3>
+            <p className='text-xs leading-normal mb-2'>
+              Boosts metabolism levels and increases blood circulation to strengthen the immune
+              system.
+            </p>
+            <h3 className='text-sm mb-3'>
+              <strong>100% SAFE FOR ALL SKIN TYPES:</strong>
+            </h3>
+            <p className='text-xs leading-normal mb-2'>
+              Botanically-based, hypo-allergenic, non-toxic, and 100% safe for everyday use.
+            </p>
+          </div>
+          <div className='mb-4'>
+            <Image
+              src='/assets/images/NEWDESIGN-picture3-Freetshirt_2_1_480x480.jpg'
+              width={480}
+              height={480}
+              objectFit='contain'
+              alt='Amazing Results!'
+              layout='responsive'
+            />
+          </div>
+          <div className='text-center'>
+            <h3 className='text-sm mb-3'>
+              <strong>How to use:</strong>
+            </h3>
+            <p className='text-xs leading-normal mb-2'>
+              Clean your belly button carefully and apply the product <br />
+              You may apply the oil&nbsp;on various areas,&nbsp;but applying the oil&nbsp;directly
+              over the navel will improve&nbsp;results.&nbsp; <br />
+              Results appear after&nbsp;<strong data-mce-fragment='1'>the first use</strong>
+            </p>
+          </div>
+          <div className='text-center'>
+            <h3 className='text-sm mb-1'>
+              <strong>One BOX Includes:</strong>
+            </h3>
+            <p className='text-sm leading-normal mb-2'>Lumin Care™ Fat Melting Miracle</p>
+          </div>
+          <div className='mb-6'>
+            <img
+              src='/assets/images/money_back_guarantee.png'
+              alt='Money Back Guarantee!'
+              className='mx-auto'
+            />
+          </div>
+          <div className='mb-4 text-center'>
+            <h2 className='text-md mb-3 font-bold'>
+              <strong>Your Order will Arrive in Our Branded Box!</strong>
+            </h2>
+            <p className='text-sm leading-normal mb-2'>
+              Your package will arrive in our branded box and&nbsp;is easy to spot. It ensures that
+              your order arrives safely and securely
+            </p>
+          </div>
+          <img
+            src='/assets/images/Lumincaredeliveryboxprodpage_480x480.jpg'
+            alt='DeliveryBox'
+            className='rounded-lg mx-auto'
+          />
         </section>
 
         {/* FAQ */}
